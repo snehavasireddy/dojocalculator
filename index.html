@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Arithmetic Calculator</title>
+
+<!-- Page Tab Image -->
+<link rel="icon" type="image/png" href="resources/images/Calculator.png" />
+
+<!-- Latest Bootstrap compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- Latest BootFlat compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://bootflat.github.io/bootflat/css/bootflat.min.css">
+
+<!-- Custom Fonts -->
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+	rel='stylesheet' type='text/css'>
+<link
+	href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+	rel='stylesheet' type='text/css'>
+
+<!-- Latest Font Awesome minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Custom Calculator Page CSS -->
+<link rel="stylesheet" type="text/css"
+	href="resources/css/calculator.css">
+
+</head>
+<body>
+	<!-- Navigation Bar -->
+	<nav role="navigation" class="navbar navbar-inverse drop-shadow">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" data-target="#navbarCollapse"
+				data-toggle="collapse" class="navbar-toggle">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a href="" class="navbar-brand"><font face="MyCustomFont"
+				size="6" id="MyCustomWelcome">CALCULATOR</font></a>
+		</div>
+	</nav>
+
+	<!-- Calculator Section -->
+	<div class="container">
+		<div id="heading" class="text-center">
+			<h3>SIMPLE ARITHMETIC CALCULATOR</h3>
+			<h5>USING</h5>
+			<h4>( HTML, CSS, DOJO TOOLKIT, BOOTSTRAP )</h4>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="row">
+			<div id="calculatorSection"
+				class="col-md-3 col-center-block text-center">
+				<div id="calculatorBody" class="col-md-12 well">
+					<div id="calculator" class="col-md-12">
+						<div class="row">
+							<input id="display" type="text" class="form-control"
+								readonly="readonly" />
+						</div>
+						<div id="keypadSection" class="row">
+							<button type="button" class="col-md-3 btn btn-danger">C</button>
+							<button type="button" class="col-md-3 btn btn-warning">&plusmn;</button>
+							<button type="button" class="col-md-3 btn btn-warning">/</button>
+							<button type="button" class="col-md-3 btn btn-warning">*</button>
+							<button type="button" class="col-md-3 btn btn-default">7</button>
+							<button type="button" class="col-md-3 btn btn-default">8</button>
+							<button type="button" class="col-md-3 btn btn-default">9</button>
+							<button type="button" class="col-md-3 btn btn-warning">-</button>
+							<button type="button" class="col-md-3 btn btn-default">4</button>
+							<button type="button" class="col-md-3 btn btn-default">5</button>
+							<button type="button" class="col-md-3 btn btn-default">6</button>
+							<button type="button" class="col-md-3 btn btn-warning">+</button>
+							<button type="button" class="col-md-3 btn btn-default">1</button>
+							<button type="button" class="col-md-3 btn btn-default">2</button>
+							<button type="button" class="col-md-3 btn btn-default">3</button>
+							<button type="button" class="col-md-3 btn btn-primary">=</button>
+							<button type="button" class="col-md-6 btn btn-default">0</button>
+							<button type="button" class="col-md-3 btn btn-default">.</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p class="text-muted text-align">
+						&copy; Copyright 2016 <b>Sneha Vasireddy</b>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JS Section -->
+	<!-- load Dojo -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"
+		data-dojo-config="async: true"></script>
+
+	<!-- Latest compiled and minified JQuery -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="resources/js/calculator.js"></script>
+
+	<!-- Custom Calculator Page JS -->
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>

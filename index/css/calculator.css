@@ -1,0 +1,117 @@
+@CHARSET "ISO-8859-1";
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
+	overflow-y: scroll;
+	overflow-x: auto;
+	/* Margin bottom by footer height */
+	margin-bottom: 20px;
+	background-color: #bfd2e1 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@font-face {
+	font-family: MyCustomFont;
+	src: url("font/Eurostile_MN_Extended_Bold.eot");
+	/* EOT file for IE */
+}
+
+@font-face {
+	font-family: MyCustomFont;
+	src: url("font/Eurostile MN Extended Bold.ttf");
+	/* TTF file for CSS3 browsers */
+}
+
+.navbar {
+	border-radius: 0px;
+}
+
+.navbar-inverse {
+	background-color: #0E4257;
+	background-image: none;
+	border-color: none;
+}
+
+.nav.navbar-nav.navbar-right li a {
+	color: #FFF;
+}
+
+.navbar-brand {
+	line-height: 12px;
+	padding-bottom: 5px;
+}
+
+.navbar-brand small {
+	display: block;
+	font-size: 10px;
+}
+
+.drop-shadow {
+	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+}
+
+.curve {
+	border-radius: 10px;
+}
+
+#calculatorSection {
+	margin-top: 50px;
+}
+
+#calculatorBody {
+	border-radius: 5px;
+	box-shadow: 5px 8px 10px #777;
+}
+
+#display {
+	height: 80px;
+}
+
+.col-center-block {
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#keypadSection {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.btn {
+	border-radius: 0px;
+	height: 80px;
+	border: 1px solid grey;
+	font-size: 40px;
+}
+
+/*
+.btn-primary {
+	height: 160px;
+}
+*/
+
+.footer {
+	background-color: rgba(0, 0, 0, 0);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 0;
+}
