@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=0.4">
-<meta name="description" content="Dojo Calculator">
-<meta name="author" content="Sneha Vasireddy">
-	
 <title>Arithmetic Calculator</title>
 
 <!-- Page Tab Image -->
@@ -65,36 +59,67 @@
 	<div class="col-md-12">
 		<div class="row">
 			<div id="calculatorSection"
-				class="col-md-4 col-center-block text-center">
+				class="col-md-3 col-center-block text-center">
 				<div id="calculatorBody" class="col-md-12 well">
 					<div id="calculator" class="col-md-12">
-						<div class="row">
+						<div class="row form-group">
 							<input id="display" type="text" class="form-control"
 								readonly="readonly" />
 						</div>
 						<div id="keypadSection" class="row">
-							<button type="button" class="col-md-3 btn btn-danger">C</button>
-							<button type="button" class="col-md-3 btn btn-warning">&plusmn;</button>
-							<button type="button" class="col-md-3 btn btn-warning">/</button>
-							<button type="button" class="col-md-3 btn btn-warning">*</button>
-							<button type="button" class="col-md-3 btn btn-default">7</button>
-							<button type="button" class="col-md-3 btn btn-default">8</button>
-							<button type="button" class="col-md-3 btn btn-default">9</button>
-							<button type="button" class="col-md-3 btn btn-warning">-</button>
-							<button type="button" class="col-md-3 btn btn-default">4</button>
-							<button type="button" class="col-md-3 btn btn-default">5</button>
-							<button type="button" class="col-md-3 btn btn-default">6</button>
-							<button type="button" class="col-md-3 btn btn-warning">+</button>
-							<button type="button" class="col-md-3 btn btn-default">1</button>
-							<button type="button" class="col-md-3 btn btn-default">2</button>
-							<button type="button" class="col-md-3 btn btn-default">3</button>
-							<button type="button" class="col-md-3 btn btn-primary">=</button>
-							<button type="button" class="col-md-6 btn btn-default">0</button>
-							<button type="button" class="col-md-3 btn btn-default">.</button>
+							<button id="clearButton" type="button"
+								class="col-md-3 btn btn-danger keypadButton">C</button>
+							<button type="button" id="toggleButton"
+								class="col-md-3 btn btn-warning keypadButton numberPadButton">&plusmn;</button>
+							<button id="percentileOperator" type="button"
+								class="col-md-3 btn btn-warning keypadButton operatorButton">%</button>
+							<button id="deleteButton" type="button"
+								class="col-md-3 btn btn-warning keypadButton">
+								<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+							</button>
+							<button type="button" id="numberKey7"
+								class="col-md-3 btn btn-default keypadButton numberPadButton">7</button>
+							<button type="button" id="numberKey8"
+								class="col-md-3 btn btn-default keypadButton numberPadButton">8</button>
+							<button type="button" id="numberKey9"
+								class="col-md-3 btn btn-default keypadButton numberPadButton">9</button>
+							<button id="divideOperator" type="button"
+								class="col-md-3 btn btn-warning keypadButton operatorButton">/</button>
+							<button type="button" id="numberKey4"
+								class="col-md-3 btn btn-default keypadButton numberPadButton">4</button>
+							<button type="button" id="numberKey5"
+								class="col-md-3 btn btn-default keypadButton numberPadButton">5</button>
+							<button type="button" id="numberKey6"
+								class="col-md-3 btn btn-default keypadButton numberPadButton">6</button>
+							<button id="multiplyOperator" type="button"
+								class="col-md-3 btn btn-warning keypadButton operatorButton">*</button>
+							<button type="button" id="numberKey1"
+								class="col-md-3 btn btn-default keypadButton numberPadButton">1</button>
+							<button type="button" id="numberKey2"
+								class="col-md-3 btn btn-default keypadButton numberPadButton">2</button>
+							<button type="button" id="numberKey3"
+								class="col-md-3 btn btn-default keypadButton numberPadButton">3</button>
+							<button id="minusOperator" type="button"
+								class="col-md-3 btn btn-warning keypadButton operatorButton">-</button>
+							<button type="button" id="decimalPoint"
+								class="col-md-3 btn btn-default keypadButton numberPadButton">.</button>
+							<button type="button" id="numberKey0"
+								class="col-md-3 btn btn-default keypadButton numberPadButton">0</button>
+							<button type="button" id="equalsButton"
+								class="col-md-3 btn btn-primary keypadButton">=</button>
+							<button id="addOperator" type="button"
+								class="col-md-3 btn btn-warning keypadButton operatorButton">+</button>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div id="testPage" class="container">
+		<div id="heading" class="text-center">
+			<h5>TO VIEW QUNIT TEST RESULT</h5>
+			<h6>CLICK BELOW BUTTON</h6>
+			<a href="calculatorTests.html" id="textPageButton" class="btn btn-lg btn-danger drop-shadow">Test Results</a>
 		</div>
 	</div>
 	<!-- Footer -->
@@ -114,18 +139,18 @@
 	<!-- load Dojo -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"
-		data-dojo-config="async: true"></script>
+		data-dojo-config="parseOnLoad: true, async:true, useXDomain: true"></script>
 
 	<!-- Latest compiled and minified JQuery -->
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="resources/js/calculator.js"></script>
-
-	<!-- Custom Calculator Page JS -->
+	<!-- Bootstrap JS -->
 	<script
 		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- Custom Calculator JS -->
+	<script src="resources/js/CalculatorEventHandler.js"></script>
 
 </body>
 </html>

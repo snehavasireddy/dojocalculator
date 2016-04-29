@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Arithmetic Calculator</title>
+
+<!-- Page Tab Image -->
+<link rel="icon" type="image/png" href="resources/images/Calculator.png" />
+
+<!-- Latest Bootstrap compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- Latest BootFlat compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://bootflat.github.io/bootflat/css/bootflat.min.css">
+
+<!-- Custom Fonts -->
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+	rel='stylesheet' type='text/css'>
+<link
+	href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+	rel='stylesheet' type='text/css'>
+
+<!-- Latest Font Awesome minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- QUnit Test Custom CSS -->
+<link rel="stylesheet"
+	href="https://code.jquery.com/qunit/qunit-1.14.0.css">
+
+<!-- Custom Calculator Page CSS -->
+<link rel="stylesheet" type="text/css"
+	href="resources/css/calculatorTest.css">
+
+</head>
+<body>
+	<!-- Navigation Bar -->
+	<nav role="navigation" class="navbar navbar-inverse drop-shadow">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" data-target="#navbarCollapse"
+				data-toggle="collapse" class="navbar-toggle">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a href="index.html" class="navbar-brand"><font face="MyCustomFont"
+				size="6" id="MyCustomWelcome">CALCULATOR</font></a>
+		</div>
+	</nav>
+	<div class="container">
+		<div id="heading" class="text-center">
+			<h3>QUNIT TEST RESULTS FOR CALCULATOR</h3>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="col-md-12">
+			<div id="qunit"></div>
+			<div id="qunit-fixture"></div>
+			<iframe id="applicationToTest" src="calculator.html"></iframe>
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p class="text-muted text-align">
+						&copy; Copyright 2016 <b>Sneha Vasireddy</b>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JS Section -->
+	<!-- load Dojo -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"
+		data-dojo-config="parseOnLoad: true, async:true, useXDomain: true"></script>
+
+	<!-- Latest compiled and minified JQuery -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- QUnit Test Javascript JS File -->
+	<script src="https://code.jquery.com/qunit/qunit-1.14.0.js"></script>
+
+	<!-- Custom CalculatorTest JS -->
+	<script src="resources/js/QunitTests/CalculatorTest.js"></script>
+
+</body>
+</html>
