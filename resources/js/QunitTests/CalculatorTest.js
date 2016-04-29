@@ -8,7 +8,7 @@ require(["dojo/dom", "dojo/_base/window", "dojo/domReady!"],
 	"use strict";
 
 	var display,
-	fixtureIsSetUp = false,
+	initializationFlag = false,
 	getDojoContextToApplication = function () {
 		var applicationToTest = dom.byId("applicationToTest").contentWindow;
 		window.setContext(applicationToTest.window,applicationToTest.window.document);
@@ -16,10 +16,10 @@ require(["dojo/dom", "dojo/_base/window", "dojo/domReady!"],
 
 	module("Calculator", {
 		setup: function () {
-			if (!fixtureIsSetUp) {
+			if (!initializationFlag) {
 				getDojoContextToApplication();
 				display = dom.byId("display");
-				fixtureIsSetUp = true;
+				initializationFlag = true;
 			}
 		},
 		teardown: function () {
